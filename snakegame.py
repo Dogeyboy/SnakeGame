@@ -1,0 +1,8 @@
+# Import Turtle Vector Graphics
+import turtle
+
+# Create a window
+Mwn = turtle.Screen()
+Mwn.title = "Snake Game"
+Mwn.bgcolor("Green") 
+Mwn.setup(width=600, height=600)
