@@ -1,15 +1,21 @@
-# Import Turtle Vector Graphics
-import turtle
+import pygame
+import sys
+import random
 
-# Create a window
-Mwn = turtle.Screen();
-Mwn.title = "Snake Game"
-Mwn.bgcolor("green");
-Mwn.setup(width=600, height=600);
-Mwn.tracer(0);
+#initialize pygame
+pygame.init()
 
+# Constants
+WIDTH, HEIGHT = 600, 400
+CELL_SIZE = 20
+FPS = 10
 
+# Colors
+BLACK = (0, 0, 0)
+GREEN = (0, 255, 0)
+RED = (255, 0, 0)
 
-
-
-Mwn.mainloop()
+# Set up the display
+screen = pygame.display.set_mode((WIDTH, HEIGHT))
+pygame.display.set_caption('Snake Game')
+clock = pygame.time.Clock()
